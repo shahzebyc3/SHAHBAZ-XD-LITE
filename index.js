@@ -105,7 +105,7 @@ const CHANNEL_JIDS = process.env.CHANNEL_JIDS ? process.env.CHANNEL_JIDS.split('
 // Default prefix for bot commands
 let PREFIX = process.env.PREFIX || ".";
 // 🔒 Bot mode: private | public
-let BOT_MODE = "private"; // default public
+let BOT_MODE = "public"; // default public
 global.BOT_MODE = BOT_MODE;
 
 setInterval(() => {
