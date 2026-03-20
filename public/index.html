@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>🚀 SHAHBAZ-XD-LITE | WhatsApp Bot</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+</head>
+<body>
+  <!-- Cyber Particle Background -->
+  <div class="particles" id="particles"></div>
+
+  <!-- Welcome Modal -->
+  <div id="welcomeModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>⚡ WELCOME TO SHAHBAZ-XD-LITE</h2>
+        <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-icon">
+          <i class="fas fa-robot"></i>
+        </div>
+        <p style="font-size: 1.2rem; color: #e0aaff; margin-bottom: 10px;">WhatsApp Bot Platform</p>
+        <p style="color: #b388ff; line-height: 1.8; margin-bottom: 30px;">
+          Experience next-generation WhatsApp automation with powerful features, 
+          enhanced security, and lightning-fast performance.
+        </p>
+        <div class="modal-buttons">
+          <a href="https://github.com/shahzebyc3/SHAHBAZ-XD-LITE" target="_blank" class="btn modal-btn">
+            <i class="fab fa-github"></i> ⭐ Star Repository
+          </a>
+          <button class="btn btn-secondary modal-btn" id="continueBtn">
+            <i class="fas fa-rocket"></i> Continue to Dashboard
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cyber Navigation -->
+  <nav id="nav">
+    <div class="brand">
+      <div class="logo">🤖</div>
+      <div>
+        <div class="brand-name">SHAHBAZ-XD-LITE</div>
+        <div class="brand-subtitle">SHAHBAZ-XD-LITE EDITION</div>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="#features"><i class="fas fa-stars"></i> Features</a>
+      <a href="#connect"><i class="fas fa-plug"></i> Connect</a>
+      <a href="#links"><i class="fas fa-link"></i> Resources</a>
+    </div>
+    <button class="nav-toggle" id="navToggle">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="hero-content">
+      <h1>SHAHBAZ-XD-LITE</h1>
+      <p class="hero-description">Next-generation WhatsApp automation with ultra performance and security</p>
+
+      <!-- Live Stats -->
+      <div class="stats-container">
+        <div class="stat-card active">
+          <div class="stat-icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <div class="stat-info">
+            <div class="stat-value" id="activeSockets">0</div>
+            <div class="stat-label">Active Connections</div>
+          </div>
+        </div>
+
+        <div class="stat-card total">
+          <div class="stat-icon">
+            <i class="fas fa-users-gear"></i>
+          </div>
+          <div class="stat-info">
+            <div class="stat-value" id="totalUsers">0</div>
+            <div class="stat-label">Total Users</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Features Section -->
+    <section id="features" class="card feature-section">
+      <div class="section-header">
+        <h2><i class="fas fa-stars"></i> COOL FEATURES</h2>
+        <p class="section-subtitle">Powered by SHAHBAZ-XD-LITE Official</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3>AI Responses</h3>
+          <p>Smart contextual replies with machine learning capabilities</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-shield-halved"></i>
+          </div>
+          <h3>Cyber Security</h3>
+          <p>Military-grade encryption and threat detection</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <h3>Ultra Fast</h3>
+          <p>Lightning-speed message processing & delivery</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-plug"></i>
+          </div>
+          <h3>Multi-Device</h3>
+          <p>Simultaneous connections across multiple devices</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Connect Section -->
+    <section id="connect" class="card connect-section">
+      <div class="section-header">
+        <h2><i class="fas fa-plug"></i> CONNECTION</h2>
+        <p class="section-subtitle">Connect in 3 simple steps</p>
+      </div>
+      
+      <div class="instructions">
+        <h3><i class="fas fa-terminal"></i> Connection Protocol:</h3>
+        <ol class="steps-list">
+          <li>Enter your WhatsApp number (digits only, include country code)</li>
+          <li>Click "Request Pairing Code" to generate secure token</li>
+          <li>Copy the 8-digit cyber code from below</li>
+          <li>Open WhatsApp → Settings → Linked Devices → Link a Device</li>
+          <li>Paste the code when prompted to establish secure connection</li>
+        </ol>
+        <p style="color: #c77dff; margin-top: 20px; font-weight: 600;">
+          <i class="fas fa-info-circle"></i> Code expires in 5 minutes for security
+        </p>
+      </div>
+
+      <div class="connection-form">
+        <div class="input-box">
+          <div class="input-group">
+            <i class="fas fa-mobile-alt"></i>
+            <input type="tel" id="phone" placeholder="923191285720" maxlength="15" />
+          </div>
+          <button class="btn primary-btn" id="requestPairing">
+            <i class="fas fa-key"></i> GENERATE PAIRING CODE
+          </button>
+        </div>
+        
+        <div id="status" class="status-message"></div>
+      </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="links" class="card links-section">
+      <div class="section-header">
+        <h2><i class="fas fa-link"></i> SHAHBAZ-XD-LITE RESOURCES</h2>
+        <p class="section-subtitle">Explore the ecosystem</p>
+      </div>
+      <div class="link-grid">
+        <a class="btn primary-btn" href="https://github.com/shahzebyc3/SHAHBAZ-XD-LITE" target="_blank">
+          <i class="fab fa-github"></i> GitHub Repository
+        </a>
+        <a class="btn secondary-btn" href="https://whatsapp.com/channel/0029Vb6ylXL5Ui2UvZDIZU1M" target="_blank">
+          <i class="fab fa-whatsapp"></i> WhatsApp Channel
+        </a>
+        <a class="btn secondary-btn" href="#" target="_blank">
+          <i class="fas fa-book"></i> Documentation
+        </a>
+        <a class="btn secondary-btn" href="#" target="_blank">
+          <i class="fas fa-headset"></i> Support
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>© <span id="year"></span> SHAHBAZ-XD-LITE BOT EDITION • v2.0</p>
+      <p style="margin-top: 15px; color: #b388ff; font-size: 1rem;">
+        <i class="fas fa-code"></i> Built with ArslanMD
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="scripts.js"></script>
+  <script>
+    // Add continue button functionality
+    document.getElementById('continueBtn')?.addEventListener('click', () => {
+      document.getElementById('welcomeModal').classList.remove('active');
+      setTimeout(() => {
+        document.getElementById('welcomeModal').style.display = 'none';
+      }, 500);
+    });
+  </script>
+</body>
+</html>
